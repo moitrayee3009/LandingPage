@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ansökan form</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body> 
+   
+        <form action="#" method="POST">
+            <h1>Ansökan till KYH</h1>
+            <section>
+                <h2>Personal uppgift</h2> 
+                <p class="note">(obligatoriska fält följs av <strong><abbr title="required">*</abbr></strong>.)</p>
+                <fieldset>
+                        <p>
+                            <label for="name">
+                            <span>Namn:<strong><abbr title="required">*</abbr></strong> </span>
+                            </label>
+                            <input type="text" id="name" name="namn" required>
+                        </p>
+                        <p>
+                            <label for="bday">
+                            <span>Födelsedag:<strong><abbr title="required">*</abbr></strong> </span>   
+                            </label>
+                            <input type="date" id="bday" name="födelsedag" required placeholder="yyyy-mm-dd">
+                        </p>
+                        <p>
+                            <label for="mail">
+                            <span>E-post:<strong><abbr title="required">*</abbr></strong> </span>
+                            </label>
+                            <input type="email" id="email" name="epost" required>
+                        </p>
+                        <p>
+                            <label for="mobile">
+                            <span>Mobil:<strong><abbr title="required">*</abbr></strong> </span>
+                            </label>
+                            <input type="tel" id="mobile" name="Mobil">
+                        </p>      
+                
+                    <label for="sex">
+                    <span>Kön:<strong><abbr title="required">*</abbr></strong> </span>   
+                    </label>
+                    <!-- <legend>Kön: </legend> -->
+                        <ul class="sex">
+                        <li>                        
+                            <input type="radio" id="man" name="sex" value="m">
+                            <label for="man">Man</label>
+                        </li>
+                        <li>                        
+                            <input type="radio" id="kvinna" name="sex" value="k">
+                            <label for="kvinna">Kvinna</label>
+                        </li>
+                        <li>                        
+                            <input type="radio" id="annat" name="sex" value="a">
+                            <label for="annat">Annat</label>
+                        </li>
+                        <li>                        
+                            <input type="radio" id="svarar_ej" name="sex" value="svarar_ej">
+                            <label for="svarar_ej">Vill inte svara</label>
+                        </li>
+                        </ul>
+                </fieldset>       
+            </section>
+            <section>
+                <fieldset>
+                        <p>
+                            <label for="course">
+                                <span>Utbildning:<strong><abbr title="required">*</abbr></strong></span> 
+                            </label>
+                            <select id="course" name="course" required>
+                                <option value="" disabled selected>Välj Utbildning </option>
+                                <option value="0">Front End Developer</option>
+                                <option value="1">Affärsutvecklare Digital Handel</option>
+                                <option value="2">Lönekonsult</option>
+                            </select>
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        <span>Förkunskaper:<strong><abbr title="required">*</abbr></strong></span>
+                    </label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="prog1" name="prog" value="prog1">
+                            <label for="prog1">Programmering 1</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="prog2" name="prog" value="prog2">
+                            <label for="prog2">Programmering 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sva2" name="sva" value="sva2">
+                            <label for="sva2">Svenska 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sva3" name="sva" value="sva3">
+                            <label for="sva3">Svenska 3</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="math2" name="math" value="math2">
+                            <label for="math2">Matematik 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="math3" name="math" value="math3">
+                            <label for="math3">Matematik 3</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="eng5" name="eng" value="eng5">
+                            <label for="eng5">Engelska 5</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="eng6" name="eng" value="eng6">
+                            <label for="eng6">Engelska 6</label>
+                        </li>
+                    </ul>  
+                </fieldset>
+                <fieldset>
+                    <label>
+                        <span>Ladda upp filer :<strong><abbr title="required">*</abbr></strong></span>
+                    </label>
+                    <input type="file" name="file" id="file" accept="image/*,.doc,.docx,.pdf" multiple>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <label for="moreText"><span>Vill du säga mer:</span> </label>
+                    <textarea id="moreText" name="moreText"
+                        rows="3" cols="33" maxlength="200" wrap="hard">
+                    </textarea>
+                </fieldset>
+            </section>
+            <section id="btnFormSubmit">
+                <button name="submit" type="submit" value="submit-true">
+                    Skicka 
+                </button>
+            </section>
+        </form>
+
+    <script src="main.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+</body>
+</html>

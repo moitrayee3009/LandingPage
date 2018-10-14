@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>landningsSida</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        
+    </head>
+    <body>
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="KYH">          
+        </div>
+        <header>
+            <div class="header-container">
+                <div class="header-heading">
+                    <!-- <h1>frontend developer</h1> -->
+                    <p>Din<br>karriär<br>
+                        Vårt<br>ansvar</p>
+                    <!-- <div class="arrow-down">
+                        <i class="fas fa-arrow-down"></i>
+                    </div> -->
+                </div>	
+                
+            </div>
+            <div class="header-tags">
+                #JavaScript #WebDevelopment
+            </div>
+        </header>
+        
+        <div class="container">
+            <div class="centr-top  read-more"> 
+                <a href="http://kyh.se/project/front-end-developer/" target="_blank">Läs mer om utbildningen här</a>
+                <strong>Sen ansökan är öppen  <button id= "apply">ansök här</button></strong>
+            </div>
+            <div class="grid-container-medium">
+                    <div class="grid-container-left grid-item">
+                        <center>
+                            <p>Läs vad Zlatan säger om KYH</p>
+                        </center>
+                        <div class="col-sm-6">
+                            <center>
+                            <img src="Images/zlatan.jpg" alt="zlatan" class="avatar" id="zlatan_back">
+                            <p class="student-name">Zlatan</p>
+                            <p class="post"><i>Studerande på utbuildningen</i></p>
+                            <div class="testimonial">
+                                <i>
+                                    "Lorem ipsum dolor sit amet,<br>
+                                    consectetur adipiscing elit.<br>
+                                    Donec efficitur,<br>
+                                    arcu eu convallis mattis,<br>
+                                    nisl ante maximus nisi,<br> 
+                                    vitae rhoncus lorem nunc nec urna."
+                                </i>
+                            </div>
+                            
+                        </center>
+                        </div>
+                    </div>
+                    <div class="grid-container-right grid-item col-sm-6" >
+                        <center>
+                            <!-- <ul>
+                                <li>400 yhp</li>
+                                <li>25% Praktik</li>
+                                <li>30000 ingångslön</li>
+                            </ul> -->
+                            <h3>Vi är här!</h3>
+                            <!--The div element for the map -->
+                            <div id="map"></div>
+                        </center>
+                    </div> 
+            </div>
+        </div>
+            
+        <div class="footer">
+            
+                <!-- <div class="contact">
+                    <h3>kontakt</h3>
+                    <ul>
+                        <li>Namn:</li>
+                        <li>E-post:</li>
+                        <li>Tel:</li>
+                    </ul>
+                </div>
+                <div class="contact-image">
+                    <img src="https://source.unsplash.com/d6dxQwmxV2Q" alt="kontakt" class="avatar">
+                </div> -->
+
+                <h3>Intresseanmälan</h3>
+                <form id="interest_form" action="#" method="post">
+                    <div class="interest_input">
+                            <label>Namn</label>
+                            <input type="text" name="namn" placeholder="förnamn efternamn" required="required">
+
+                            <label>E-post</label>
+                            <input type="email" name="epost" placeholder="epost" required="required">   
+                        
+                            <input type="submit" value="Skicka">
+                    </div>
+                </form>
+             
+        </div>      
+        
+
+     <script src="main.js"></script> 
+     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtJEiO6bhMst-k5k-_lFGsF-MNhNfKg1A&callback=landingPageControls">
+     </script> 
+     
+    </body>
+</html>
